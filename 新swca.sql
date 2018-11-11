@@ -21,7 +21,7 @@ create table tb_article
    user_id              integer comment '提交该文章的人---用户的id',
    submit_time          TIMESTAMP comment '文章提交时间',
    content              text comment '文章的详细内容，存放的是html格式，直接拿出来放页面上即可',
-   title                varchar(50) comment '文章标题',
+   title                varchar(150) comment '文章标题',
    state                integer comment '文章状态，0：未审核，1：已审核，3：已删除',
    reading              integer comment '文章阅读量',
    parise               integer comment '文章点赞数量',
