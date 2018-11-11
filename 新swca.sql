@@ -106,6 +106,9 @@ create table tb_slide
    article_id           integer comment '要跳转到哪个文章的，根据文章id',
    addres               VARCHAR(400) comment '轮播图在阿里云oss中的url地址：“http:\\......”',
    state                integer comment '轮播图状态：0：未审核，1：已审核，3：已删除',
+   bucket_name          varchar(20) comment '在阿里云oss的哪个bucket中存放',
+   bucket_disk_name     varchar(20) comment '存放在阿里云oss的bucket中的哪个文件夹中',
+   fileName             varchar(50) comment '阿里云oss中bucket的哪个文件夹下的哪个文件名称',
    primary key (slide_id)
 );
 
